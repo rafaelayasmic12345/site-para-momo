@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️★ Para a a minha Evangeline ★❤️</title>
+
+    <script src="assets/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/estilo.css">
+
+    <link rel="preload" as="image" href="imagens/fundo2.gif">
+    <link rel="preload" as="image" href="imagens/fundo3.gif">
+    <link rel="preload" as="image" href="imagens/fundo4.jpg">
+    <link rel="preload" as="image" href="imagens/fundo7.gif">
+    <link rel="preload" as="image" href="imagens/fundo9.gif">
+    <link rel="preload" as="audio" href="assets/musica.mp3">
+
+</head>
+<body class="fundo1">
+
+    <div class="pop-up">
+        <h1 class="text-muted">Título teste</h1>
+        <div>Descriçao teste</div>
+        <section class="text-center">
+            <button class="btn-azul" onclick="mostraPopUp(false)">Fechar</button>
+        </section>
+    </div>
+    
+    <div class="container d-flex justify-content-center">
+
+        <div id="tela1" class="tela tela-centro visivel">
+            <h1 class="text-muted">Bem-vindoo</h1>
+            <p>Você está pronto??</p>
+            <button class="mudaTela btn-azul">Começar</button>
+
+            <!--
+            <div class="mt-5">
+
+                <a href="#" class="opcoes">Ver opções</a>
+                <div class="invisivel opcoes">
+                    <p>Se quiser, você pode escolher começar de uma tela específica:</p>
+                    <button class="btn-rosa mudaTela" tela="">Início</button>
+                    <button class="btn-rosa">Mensagens</button>
+                    <button class="btn-rosa">Momentos marcantes</button>
+                    <button class="btn-rosa">O que você mudou em mim</button>
+                    <button class="btn-rosa">Nossa primeira conversa</button>
+                    <button class="btn-rosa">Memorial</button>
+                    <button class="btn-rosa">Declaração</button>
+                    <button class="btn-rosa">Final</button>
+                </div>
+
+            </div>
+            -->
+
+        </div>
+
+        <div id="tela2" class="tela" fundo="fundo1">
+            <p class="text-muted"><small>Antes de começar, confirme:</small>
+                <br>
+            <strong>Você conhece esta pessoa?</strong></p>
+            <img src="imagens/tela2.png" class="custom" width="150" alt="">
+            <br>
+
+            <button class="mudaTela btn-azul btn-block mt-5" animacao="null" tempoAnimacao="500">Sim</button>
+            <br>
+            <button class="btn-vermelho btn-block" onclick="alert('Então se você n é meu chulé pode siar que aqui é só pro meuu chuléééé');window.location.href='https://www.dicio.com.br/trouxa/'; " >Não</button>
+
+        </div>
+
+        <div id="tela3" class="tela">
+            <p><strong>Tem certeza?</strong><br> Olhe bem pra isso:</p>
+            <img src="imagens/tela3.png" class="custom" width="150" alt="">
+
+            <br>
+            <button class="mudaTela btn-block btn-azul">Sim, souuu eu o chulé da minha momolada</button>
+        </div>
+            <div id="tela4" class="tela">
+            <h2>Espere...</h2>
+
+            <img src="imagens/tela4.jpg" class="custom mb-4" width="150" alt="">
+
+            <p>É o <strong>momo</strong> que está acessando essa página agora?
+                <br><small class="text-muted" style="font-weight: 700;">Olha oq vai responder bobão!</small>
+            </p>
+            <button class="mudaTela btn-azul">Sim, o momolado que tem chulé hihi</button>
+            <button class="mudaTela btn-vermelho btn-block" >Sim, sou o bobão q namora a indiazinha com chulééé</button>
+        </div>
+
+        <div id="tela5" class="tela">
+            <p>Para que tudo dê certo, você precisa estar ouvindo a música de fundo.</p>
+            <hr>
+            <p><small>Quando estiver ouvindo-a, clique no botão.</small></p>
+            <button class="mudaTela btn-azul">Continuar</button>
+        </div>
+
+        <div id="tela6" class="invisivel letra2 temporizado tela-centro" fundo="fundo2" style="color: #FFF;" tempo="3000" >
+            <div tempo="3000">
+                <p>Bom, então vamos lá...</p>
+            </div>
+            <div tempo="3000">
+                <p>eu queria que você soubesse de algumas coisas meuuu nenémm</p>
+            </div>
+            <div tempo="3000" final="true">
+                <p>Fiz esse presente para você.</p>
+            </div>
+        </div>
+
+        <div id="tela7" class="invisivel temporizado letra2 tela-centro" fundo="fundo3" style="color: #FFF;"  tempo="3000" >
+            <div tempo="3000">
+                <p>Você é o melhor presente que já recebi...</p>
+            </div>
+            <div tempo="2500">
+                <p>Minha criança atentada, que topaa todas minhas loucuras...</p>
+            </div>
+            <div tempo="2500">
+                <p>Meu companheiro para minha vidinhaaaa toda...</p>
+            </div>
+            <div tempo="4000">
+                <p>Minha cara metadee!</p>
+            </div>
+            <div tempo="4000" final="true">
+                <p>O melhor jogador desse mundoooooo todo, que eu amoooo ver bravinho em campo e depois ficar provocand0, hihi dando beijinhooos</p>
+            </div>
+        </div>
+
+        <div id="tela8" class="tela-centro tela" fundo="fundo4" tempo="6000">
+         
+            <p>E eu quero te mostrar isso.</p>
+
+            <button class="mudaTela btn-rosa">Continuar</button>
+
+        </div>
+
+        <div id="tela9" class="tela">
+         
+            <div class="text-start">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">1. Mensagens</h2>
+                    <img src="imagens/tela8-1.png" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>Você sabe que é meu presente de deus o menino mais carinhoso, engraçado, hummmmmmmmmm com um cheirinho tão gostoso, com esse seu olha, nossa o seu olhar que dá um pane no meu sistema quando me olha.</strong></p>
+                </div>
+                <hr>
+                <p><strong class="letra-vermelha">E quando eu digo EU TE AMO </strong>, é porque euuuuuu te amoooooooooo muito, muitão, do tamanho do nosso bumbummm, nós não somos qualquer casal, somos sempre o casal bobão dos filmes que pra mim sempre é o melhor.</p>
+                <p><strong class="letra-vermelha">Essas nossas conversas</strong> não sei quem é mais bobão entre nós dois, suas cantadas, edits fofos do capcut, me fazer coquinha, me deixar bravinha e depois dar beijinhos, cartinhas feitas por você me conquista um dia após o outro por seuuuu chulé.</p>
+                <img src="imagens/tela8-2.png" alt="">
+                <p><strong class="letra-vermelha">lembra?</strong>O começo de tudo de cada sorriso meu, cada gargalhada, cada lagrima de felicidade quando você faz coisas que eu achei que nunca ia viver, eu te amo muito</p>
+                <p><strong class="letra-vermelha">Foi aí nesse dia</strong>, que eu me apaixoneiiiiii por seuuuu chulé.</p>
+
+            </div>
+
+            <button class="mudaTela btn-rosa mt-3">Continuar</button>
+
+        </div>
+
+        <div id="tela10" class="tela">
+
+            <div class="text-start">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">2. Momentos marcantes</h2>
+                    <img src="imagens/tela9-1.png" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>Essa é minha foto favorita sua.</strong></p>
+                </div>
+                <hr>
+                <p><span class="letra2 letra-vermelha" style="font-size: 1em;">todo dia eu me apaixono por você, é como se o meu momo me tivesse me colocando no filme "Como se fosse a primeira vez" do Adam Sandler que ele conquista a garota dele todos os dias, a única diferença é que eu não me esqueço de  pelo o contrário e vivo pensando no meu babãooo hihi.</span><br>Lembra das diversas vezes que eu fiz cara de boba e você me perguntou <strong class="text-muted">"O que foi? Por que está me olhando desse jeito?"</strong> e eu respondi <strong class="text-muted">"Nada não"</strong>?</p>
+                <p>Cada dia que passa eu tô mais bobona que nem meuu bananinha, e vou te contar quais foram os momentos mais marcantes:</p>
+                <ul>
+                    <li><strong class="letra-vermelha">A primeira vez</strong> foi quando eu fui fazer a unha e você teve um plano de me ver na pracinha. Estavamos sentados no banco, eu coloquei minha perna em cima da sua e fiz um sorriso completamente besta, enquanto você falava. Naquele momento, meu mundo parou, q fiquei apenas pensando <strong class="text-muted">"Cara, oq será que ele viu em mim"</strong>. Eu olhava pra você e ficava encantada com os sorrisos que você me dava e torcia pro tempo congelar e ficar mais tempo olhando pra você e saber mais de você .</li>
+                    <li><strong class="letra-vermelha">Quando saímos do ensaio e fomos juntos para casa</strong>, me lembro perfeitamente: eu estava doida para te beijar, mas estava com medo de você sumir depois disso mass eu ignorei isso e pensei comigo mesma,"É esse garoto que eu quero olhar e poder dar um sorriso bobo falando que é meu bobão". Eu não consigo explicar o que sinto quando você me abraça, e quando eu te beijei você me abraçou eu simplesmente esqueci de tudo a minha voltar e me agarrei a ti e nunca mais solteiii.</li>
+                    <li><strong class="letra-vermelha">Na minha festa de 15 anos</strong> Antes de você chegar eu suava, será que ele vai vir?, daí você  chegou, foi naquele momento a minha festa ficou perfeita, nós se acabamos de dançar.... </li>
+                </ul>
+
+                <hr>
+
+                <div class="text-center">
+                    <p>Esses são alguns dos momentos pois todos que estamos juntos são perfeitos.</p>
+                </div>
+
+                
+
+            </div>
+
+            <button class="mudaTela btn-rosa mt-3">Continuar</button>
+
+        </div>
+
+        <div id="tela11" class="tela">
+
+            <button class="mudaTela btn-rosa">Continuar </button>
+
+        </div>
+
+        <div id="tela12" class="tela">
+            <h2 class="letra-vermelha">Esse tipo de mensagens que você me manda que fazem eu pular de um lado pro outrooo</h2>
+            <img src="imagens/tela12.png" alt="">
+
+            <button class="mudaTela btn-rosa mt-3">Continuar</button>
+        </div>
+
+        <div id="tela13" class="tela">
+            <h2 class="letra-vermelha">O nosso memorial</h2>
+            <p>Como você sabe, eu sou uma pessoa esquecida, porém eu nunca esqueço de momentos que tornaram minha vida mais feliz...<br>... <strong class="letra-vermelha">como todos em que você esteve comigo.</strong></p>
+            <hr>
+            <p>É fácil, escolha qualquer um dos dias, pra relembrar um pouquinho:</p>
+
+
+            <table class="calendario">
+                <span><strong class="text-muted">Março de 2023</strong></span>
+                <thead>
+                    <tr>
+                        <td>Dom</td>
+                        <td>Seg</td>
+                        <td>Ter</td>
+                        <td>Qua</td>
+                        <td>Qui</td>
+                        <td>Sex</td>
+                        <td>Sáb</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td >5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td >8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td >15</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td class="marcado" value="24/3">24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td class="marcado" value="28/3">28</td>
+                        <td>29</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="calendario">
+                <span><strong class="text-muted">Abril de 2023</strong></span>
+                <thead>
+                    <tr>
+                        <td>Dom</td>
+                        <td>Seg</td>
+                        <td>Ter</td>
+                        <td>Qua</td>
+                        <td>Qui</td>
+                        <td>Sex</td>
+                        <td>Sáb</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="marcado" value="1/4">1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td >24</td>
+                        <td>25</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button class="mudaTela btn-rosa mt-5">Continuar</button>
+
+        </div>
+
+        <div id="tela14" class="invisivel temporizado letra2 tela-centro" fundo="fundo5" style="color: #FFF;" tempo="2000" >
+            <div tempo="3000">
+                <p>E só de pensar...</p>
+            </div>
+            <div tempo="2500">
+                <p>onde tudo começou...</p>
+            </div>
+            <div tempo="3000" >
+                <img src="imagens/tela11-1.png" class="custom" width="250" alt="">
+            </div>
+            <div tempo="3000">
+                <p>E só de pensar...</p>
+            </div>
+            <div tempo="4000">
+                <p>em tudo que ainda podemos viver juntos...</p>
+            </div>
+            <div tempo="4000">
+                <p>É de arrepiar.</p>
+            </div>
+            <div tempo="2500" final="true">
+                <p>Você é o meu tchan ❤️</p>
+            </div>
+        </div>
+
+        <div id="tela15" class="invisivel temporizado letra2 tela-centro" fundo="fundo11" style="color: #999;" tempo="2500" >
+            <div tempo="2000">
+                <p>Bom...</p>
+            </div>
+            <div tempo="3500">
+                <p>acho que já não dá mais para adiar.</p>
+            </div>
+            <div tempo="3500" >
+                <p>Eu preciso te fazer a pergunta.</p>
+            </div>
+            <div tempo="4000" final="true">
+                <p>Algo que estou muito segura em perguntar...</p>
+            </div>
+        </div>
+
+        <div id="tela16" class="tela tela-centro">
+            <h2 class="text-muted">Você está pronto?</h2>
+            <p>Quando estiver, é só apertar o botão.</p>
+
+            <button class="mudaTela btn-verde">Estou pronto?</button>
+        </div>
+
+        <div id="tela17" class="invisivel temporizado letra2 tela-centro" fundo="" style="color: #999;" tempo="1500" >
+            <div tempo="2000">
+                <p>Então...</p>
+            </div>
+            <div tempo="8000" final="true">
+                <p>agora, sai do site e entra no tiktok hihi...</p>
+            </div>
+        </div>
+
+        <div id="tela18" class="tela tela-centro" fundo="">
+            <h2 class="text-muted mb-5 mt-2">Qual foi a resposta?</h2>
+            <button class="mudaTela btn-block btn-azul">SIM</button>
+            <br>
+            <button class="btn-block btn-vermelho" onclick="alert('Kkkk mentira, eu sei que foi SIM.');">NÃO</button>
+        </div>
+
+        <div id="tela19" class="tela">
+            <h2 class="mb-5" style="color: #CCC">Nesse caso, precisamos atualizar o memorial</h2>
+            
+            <table class="calendario">
+                <span><strong class="text-muted">Outubro de 2023</strong></span>
+                <thead>
+                    <tr>
+                        <td>Dom</td>
+                        <td>Seg</td>
+                        <td>Ter</td>
+                        <td>Qua</td>
+                        <td>Qui</td>
+                        <td>Sex</td>
+                        <td>Sáb</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td class="marcado" value="final">25</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div id="tela20" class="invisivel temporizado letra2 tela-centro" fundo="fundo6" style="color: #FFF;" tempo="1500" >
+            <div tempo="2000" class="text-center">
+                <p class="mb-0">Obrigadooo por estar comigo e meu fazer a princesa maisssss feliz desse mundãoooooo.</p>
+                <div class="text-center">
+                    <span style="font-size:0.4em; color: #555;">fim</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    
+
+    <!--<script src="assets/js/bootstrap.min.js"></script>-->
+
+    <script src="assets/script.js"></script>
+    <!--<script src="assets/all.min.js"></script>-->
+
+</body>
+</html>
